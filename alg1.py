@@ -1,28 +1,33 @@
 import time
+import escolha
+
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    else:
+        pivot = arr[0]
+        lesser = [x for x in arr[1:] if x < pivot]
+        greater = [x for x in arr[1:] if x >= pivot]
+        return quick_sort(lesser) + [pivot] + quick_sort(greater)
 
 def usar():
-
     inicio = time.time()
 
     print("-" * 54)
-    print("  Bem-vindo ao 1º Algoritmo de Ordenação Alfabética")
+    print("  Bem-vindo ao Algoritmo de Ordenação Quick Sort")
     print("-" * 54)
 
-    arq = open('mil_senhas.txt','r+')
-    linhas = arq.readlines()
+   # arq = open('mil_senhas.txt', 'r')
+    #linhas = arq.readlines()
 
-    arr = [linha.strip('\n') for linha in linhas]
+    #lista = [linha.strip('\n') for linha in linhas]
 
-    for i in range(len(arr)):
-        indice_minimo = i
-        for j in range(i+1, len(arr)):
-            if arr[indice_minimo] > arr[j]:
-                indice_minimo = j
-        
-        arr[i], arr[indice_minimo] = arr[indice_minimo], arr[i]
+    escolha.abrir_arquivo()
+
+    lista = quick_sort(lista)
 
     print("-" * 160)
-    print("LISTA ORDENADA COM SUCESSO !!! \n\n",arr)
+    print("LISTA ORDENADA COM SUCESSO !!! \n\n", lista)
     print("-" * 160)
 
     arq.close()
@@ -31,5 +36,5 @@ def usar():
 
     print("Tempo de execução:", fim - inicio, "segundos")
 
-if (__name__ == "__main__"):
+if __name__ == "__main__":
     usar()

@@ -1,17 +1,20 @@
 import time
+import escolha
 
 def usar():
 
     inicio = time.time()
 
     print("-" * 54)
-    print("  Bem-vindo ao 2º Algoritmo de Ordenação Alfabética")
+    print("  Bem-vindo ao Algoritmo de Ordenação Bubble Sort")
     print("-" * 54)
 
-    arq = open('mil_senhas.txt','r+')
-    linhas = arq.readlines()
+    #arq = open('mil_senhas.txt','r+')
+    #linhas = arq.readlines()
 
-    lista = [linha.strip('\n') for linha in linhas]
+    #lista = [linha.strip('\n') for linha in linhas]
+
+    escolha.abrir_arquivo()
 
     invers = True
     while invers:

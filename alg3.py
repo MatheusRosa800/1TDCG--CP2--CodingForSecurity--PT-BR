@@ -1,27 +1,30 @@
 import time
-
+import escolha
 
 def usar():
 
     inicio = time.time()
 
     print("-" * 54)
-    print("  Bem-vindo ao 3º Algoritmo de Ordenação Alfabética")
+    print("  Bem-vindo ao Algoritmo de Ordenação Selection Sort")
     print("-" * 54)
 
-    data_list = open('mil_senhas.txt','r+')
-    linhas = data_list.readlines()
+    #arq = open('mil_senhas.txt','r+')
+    #linhas = arq.readlines()
 
-    data_list = [linha.strip('\n') for linha in linhas]
+    #lista = [linha.strip('\n') for linha in linhas]
+
+    escolha.abrir_arquivo()
+
     new_list = []
 
-    while data_list:
-        minimum = data_list[0]  
-        for x in data_list: 
+    while lista:
+        minimum = lista[0]  
+        for x in lista: 
             if x < minimum:
                 minimum = x
         new_list.append(minimum)
-        data_list.remove(minimum)   
+        lista.remove(minimum)   
 
     print("-" * 160)
     print("LISTA ORDENADA COM SUCESSO !!! \n\n",new_list)
