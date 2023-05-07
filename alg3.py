@@ -1,4 +1,9 @@
+import time
+
+
 def usar():
+
+    inicio = time.time()
 
     print("-" * 54)
     print("  Bem-vindo ao 3º Algoritmo de Ordenação Alfabética")
@@ -21,6 +26,10 @@ def usar():
     print("-" * 160)
     print("LISTA ORDENADA COM SUCESSO !!! \n\n",new_list)
     print("-" * 160)
+
+    fim = time.time()
+
+    print("Tempo de execução:", fim - inicio, "segundos")
 
 
 if (__name__ == "__main__"):
