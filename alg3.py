@@ -1,39 +1,24 @@
-import time
-import escolha
+def selection_sort(lista):
+    nova_lista = []
+    while lista:
+        minimum = lista[0]
+        for x in lista:
+            if x < minimum:
+                minimum = x
+        nova_lista.append(minimum)
+        lista.remove(minimum)
 
-def usar():
+    return nova_lista
 
-    inicio = time.time()
+
+def usar(lista):
 
     print("-" * 54)
     print("  Bem-vindo ao Algoritmo de Ordenação Selection Sort")
     print("-" * 54)
 
-    #arq = open('mil_senhas.txt','r+')
-    #linhas = arq.readlines()
-
-    #lista = [linha.strip('\n') for linha in linhas]
-
-    escolha.abrir_arquivo()
-
-    new_list = []
-
-    while lista:
-        minimum = lista[0]  
-        for x in lista: 
-            if x < minimum:
-                minimum = x
-        new_list.append(minimum)
-        lista.remove(minimum)   
+    lista = selection_sort(lista)
 
     print("-" * 160)
-    print("LISTA ORDENADA COM SUCESSO !!! \n\n",new_list)
+    print("LISTA ORDENADA COM SUCESSO !!! \n\n", lista)
     print("-" * 160)
-
-    fim = time.time()
-
-    print("Tempo de execução:", fim - inicio, "segundos")
-
-
-if (__name__ == "__main__"):
-    usar()
