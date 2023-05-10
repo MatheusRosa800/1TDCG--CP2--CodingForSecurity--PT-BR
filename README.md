@@ -58,9 +58,19 @@ python3 escolha.py
 ## Dashboard de avaliação de performance dos algoritmos
 Todos os algoritmos propostos foram submetidos a dez testes exaustivos, com os resultados sendo registrados para posterior análise do nível de entrega da lista.
 
+### Ambiente
+Sistema operacional: Windows 10
+Processador: Intel Pentium G4560 3.5Ghz
+Memória ram: 16GB
+SSD: 128GB
+
+### Resultados
 Com base nos resultados, é notório a performance do algoritmo ***Quick Sort*** que está a frente dos outros dois.
 
-Segue as evidências:
+Seguem as evidências:
 
-![Imagem do programa](https://i.ibb.co/JCs59J3/cod.png)
-![Imagem do programa](https://i.ibb.co/JCs59J3/cod.png)
+Evidência 01
+![Imagem do programa](https://github.com/MatheusRosa800/CP2---CodingForSecurity---PT-BR/blob/main/evidencia-1.png)
+
+Evidência 02
+![Imagem do programa](https://github.com/MatheusRosa800/CP2---CodingForSecurity---PT-BR/blob/main/evidencia-2.png)
