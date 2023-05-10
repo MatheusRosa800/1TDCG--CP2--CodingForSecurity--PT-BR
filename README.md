@@ -61,7 +61,7 @@ Todos os algoritmos propostos foram submetidos a dez testes exaustivos, com os r
 ### Ambiente
 Sistema operacional: Windows 10
 Processador: Intel Pentium G4560 3.5Ghz
-Memória ram: 16GB
+RAM: 16GB
 SSD: 128GB
 
 ### Resultados
