@@ -46,14 +46,21 @@ Para obter os arquivos digite o comando:
 git clone https://github.com/MatheusRosa800/CP2---Coding-for-Security---PT-BR.git
 cd CP2---Coding-for-Security---PT-BR
 ```
-### 3° Passo - Execute o comando abaixo para abrir o programa Python
+### 3° Passo - Instale as bibliotecas
+```
+pip install plotly
+```
+```
+pip install pandas
+```
+### 4° Passo - Execute o comando abaixo para abrir o programa Python
 ```
 python3 escolha.py
 ```
-### 4° Passo - Escreva a quantidade de números que deseja ver
+### 5° Passo - Escolha uma opção
 ![Imagem do programa](https://i.ibb.co/JCs59J3/cod.png)
 ## Youtube
-[Link para o Youtube](https://www.youtube.com/watch?v=wFsU3rTPcH8&ab_channel=PedroAugusto)
+[Link para o Youtube](https://www.youtube.com/watch?v=LkSP2HUoYfM&ab_channel=PedroAugusto)
 
 ## Dashboard de avaliação de performance dos algoritmos
 Todos os algoritmos propostos foram submetidos a dez testes exaustivos, com os resultados sendo registrados para posterior análise do nível de entrega da lista.
